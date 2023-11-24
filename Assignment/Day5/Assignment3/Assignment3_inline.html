@@ -1,0 +1,103 @@
+<html>
+<head>
+    
+<script lang="JavaScript">        
+
+function submit()
+{
+var name, city, state, m1, m2, m3, m4, m5, total;
+name= document.getElementById("name").value;
+city= document.getElementById("city").value;
+state= document.getElementById("state").value;
+m1= parseInt(document.getElementById("m1").value);
+m2= parseInt(document.getElementById("m2").value);
+m3= parseInt(document.getElementById("m3").value);
+m4= parseInt(document.getElementById("m4").value);
+m5= parseInt(document.getElementById("m5").value);
+
+total = m1+m2+m3+m4+m5;
+
+document.getElementById("total").value = total;
+
+if(total>250)
+{
+
+document.getElementById("grade").value = "A Grade";
+}
+else if(total>150 && total<250)
+{
+document.getElementById("grade").value = "B Grade";
+}
+else
+{
+document.getElementById("grade").value = "Fail";
+}
+
+}
+
+    </script>
+
+</head>
+<body>
+
+<div class="div" style="height: 800px; width :500px; border-radius: 5px; background-color: #ecdfdf; padding: 20px; font-size: medium; font-weight: bold;">
+    
+    Enter Name : 
+    <br>
+    <input type="text" id="name" placeholder="Your name.." style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+
+    City :
+    <br>
+    <select id="city" name="city" style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+      <option value="nagpur">Nagpur</option>
+      <option value="pune">Pune</option>
+      <option value="mumbai">Mumbai</option>
+    </select>
+    <br>
+
+    State : 
+    <br>
+    <input type="text" id="state" placeholder="Enter State..." style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+
+    Marks 1 :
+    <br> 
+    <input type="text" id="m1" placeholder="Enter Marks 1 ..." style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+
+    Marks 2 : 
+    <br>
+    <input type="text" id="m2" placeholder="Enter  Marks 2..." style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+    Marks 3 :
+    <br> 
+    <input type="text" id="m3" placeholder="Enter Marks 3..." style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+    Marks 4 : 
+    <br>
+    <input type="text" id="m4" placeholder="Enter Marks 4..." style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+    Marks 5 : 
+    <br>
+    <input type="text" id="m5" placeholder="Enter Marks 5..." style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+
+    Total :
+    <br>
+    <input type="text" id="total" style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+
+    Grade :
+    <br>
+    <input type="text" id="grade" style="width: 400px; padding: 12px 20px; margin: 8px 0; display: inline-block; box-sizing: border-box;">
+    <br>
+
+    <input type="button" class="subbtn" id="subbtn" value="Submit" onclick="submit()" style=" width: 100%; background-color: #af684c; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer;">
+
+
+
+</div>
+</body>    
+</html
+    

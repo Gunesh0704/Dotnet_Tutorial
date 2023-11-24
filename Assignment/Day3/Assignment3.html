@@ -1,0 +1,56 @@
+<html>
+<head>
+<script language ="JavaScript">
+var name, city, college, m1, m2, m3, m4, m5;
+
+function input(n,ct,cl,mark1,mark2,mark3,mark4,mark5)
+{
+
+name = n;
+city = ct;
+college = cl;
+m1 = mark1;
+m2 = mark2;
+m3 = mark3;
+m4 = mark4;
+m5 = mark5;
+display();
+}
+
+function display()
+{
+document.write("Name :  "+name+"<br>");
+document.write("City :  "+city+"<br>");
+document.write("College :  "+college+"<br>");
+document.write("Mark1 :  "+m1+"<br>");
+document.write("Mark2 :  "+m2+"<br>");
+document.write("Mark3 :  "+m3+"<br>");
+document.write("Mark4 :  "+m4+"<br>");
+document.write("Mark5 :  "+m5+"<br>");
+
+total = m1+m2+m3+m4+m5;
+document.write("Total :  "+total+"<br>");
+
+if(total > 250)
+{
+document.write("Division :  First Division");
+}
+else if(total >100 && total <250)
+{
+document.write("Division :  Second Division");
+}
+else
+{
+document.write("Division :  Failed");
+}
+
+}
+
+</script>
+</head>
+<body>
+
+<input type="button" value="submit" onclick="input('Gunesh','Nagpur','ACET',50,60,45,75,70)">
+
+</body>
+</html>

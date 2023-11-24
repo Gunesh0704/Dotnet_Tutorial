@@ -1,0 +1,35 @@
+<html>
+<head>
+<script language ="JavaScript">
+
+function input(name, city, college, branch, percent)
+{
+document.write(name+"<br>");
+document.write(city+"<br>");
+document.write(college+"<br>");
+document.write(branch+"<br>");
+document.write(percent+"<br>");
+
+if(percent>60)
+{
+document.write("A grade");
+}
+else if(percent>50 && percent<60)
+{
+document.write("B grade");
+}
+else if(percent>40 && percent<50)
+{
+document.write("C grade");
+}
+else
+{
+document.write("Failed");
+}
+}
+</script>
+</head>
+<body>
+<input type="button" value="display" onclick="input('Gunesh','nagpur','ACET','CSE',45)">
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <script language="JavaScript">
+        var name, city, college, m1, m2, m3, m4, m5, div;
+        function input()
+         {
+
+            name = document.getElementById("name").value;
+            city = document.getElementById("city").value;
+            college = document.getElementById("college").value;
+            m1 = parseInt(document.getElementById("m1").value);
+            m2 = parseInt(document.getElementById("m2").value);
+            m3 = parseInt(document.getElementById("m3").value);
+            m4 = parseInt(document.getElementById("m4").value);
+            m5 = parseInt(document.getElementById("m5").value);
+
+            total = m1 + m2 + m3 + m4 + m5;
+            if (total > 250) {
+                div = "First Division";
+            }
+            else if (total > 100 && total < 250) {
+                div = "Second Division";
+            }
+            else {
+                div = "Fail";
+            }
+            display();
+
+        }
+
+        function display() 
+        {
+            document.getElementById("name2").value = name;
+            document.getElementById("city2").value = city;
+            document.getElementById("college2").value = college;
+            document.getElementById("mr1").value = m1;
+            document.getElementById("mr2").value = m2;
+            document.getElementById("mr3").value = m3;
+            document.getElementById("mr4").value = m4;
+            document.getElementById("mr5").value = m5;
+            document.getElementById("total").value = total;
+            document.getElementById("div").value = div;
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    Enter your Name :
+    <input type="text" id="name">
+    <br>
+    Enter your City :
+    <input type="text" id="city">
+    <br>
+    Enter your College :
+    <input type="text" id="college">
+    <br>
+    Enter Marks 1 :
+    <input type="text" id="m1">
+    <br>
+    Enter Marks 2 :
+    <input type="text" id="m2">
+    <br>
+    Enter Marks 3 :
+    <input type="text" id="m3">
+    <br>
+    Enter Marks 4 :
+    <input type="text" id="m4">
+    <br>
+    Enter Marks 5 :
+    <input type="text" id="m5">
+    <br>
+    <input type="button" value="submit" onclick="input()">
+
+    <br><br>
+    Name :
+    <input type="text" id="name2">
+    <br>
+    City :
+    <input type="text" id="city2">
+    <br>
+    College :
+    <input type="text" id="college2">
+    <br>
+    Marks 1 :
+    <input type="text" id="mr1">
+    <br>
+    Marks 2:
+    <input type="text" id="mr2">
+    <br>
+    Marks 3 :
+    <input type="text" id="mr3">
+    <br>
+    Marks 4 :
+    <input type="text" id="mr4">
+    <br>
+
+    Marks 5 :
+    <input type="text" id="mr5">
+    <br>
+    Total :
+    <input type="text" id="total">
+    <br>
+    Division :
+    <input type="text" id="div">
+    <br>
+
+</body>
+
+</html>

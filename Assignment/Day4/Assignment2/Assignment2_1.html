@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <script language="JavaScript">
+        var s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14;
+
+        function input()
+        {
+            s1 = document.getElementById("name").value;
+            s2 = document.getElementById("city").value;
+            s3 = document.getElementById("email").value;
+            s4 = document.getElementById("mob").value;
+            s5 = document.getElementById("state").value;
+            s6 = document.getElementById("country").value;
+            
+
+            s7 = document.getElementById("college").value;
+            s8 = document.getElementById("semester").value;
+            s9 = document.getElementById("branch").value;
+            s10 = document.getElementById("address").value;
+            
+            s11 = document.getElementById("company").value;
+            s12 = document.getElementById("designation").value;
+            s13 = document.getElementById("salary").value;
+            s14 = document.getElementById("joining").value;
+        }
+        function basicinfo() 
+        {
+            input();
+            document.getElementById("name2").value = s1;
+            document.getElementById("city2").value = s2;
+            document.getElementById("email2").value = s3;
+            document.getElementById("mob2").value = s4;
+            document.getElementById("state2").value = s5;
+            document.getElementById("country2").value = s6;
+
+            qualification();
+            experience();
+
+        }
+
+        function qualification() {
+            document.getElementById("college2").value = s7;
+            document.getElementById("semester2").value = s8;
+            document.getElementById("branch2").value = s9;
+            document.getElementById("address2").value = s10;
+
+        }
+
+        function experience() {
+            
+            document.getElementById("company2").value = s11;
+            document.getElementById("designation2").value = s12;
+            document.getElementById("salary2").value = s13;
+            document.getElementById("joining2").value = s14;
+        }
+    </script>
+</head>
+
+<body>
+    Enter your Name :
+    <input type="text" id="name">
+    <br> Enter your City :
+    <input type="text" id="city">
+    <br> Enter your E-mail :
+    <input type="email" id="email">
+    <br> Enter your Mobile :
+    <input type="text" id="mob">
+    <br> Enter your State :
+    <input type="text" id="state">
+    <br> Enter your Country :
+    <input type="text" id="country">
+    <br> Enter your College :
+    <input type="text" id="college">
+    <br> Enter your Semester :
+    <input type="text" id="semester">
+    <br> Enter your Branch :
+    <input type="text" id="branch">
+    <br> Enter your Address :
+    <input type="text" id="address">
+    <br> Enter your Company :
+    <input type="text" id="company">
+    <br> Enter your Designation :
+    <input type="text" id="designation">
+    <br> Enter your Salary :
+    <input type="text" id="salary">
+    <br> Enter your Joining :
+    <input type="text" id="joining">
+    <br>
+
+    <input type="button" value="submit" onclick="basicinfo()">
+    <br><br><br>
+
+    Name :
+    <input type="text" id="name2">
+    <br>
+    City:
+    <input type="text" id="city2">
+    <br>
+    E-mail:
+    <input type="text" id="email2">
+    <br>
+    Mobile :
+    <input type="text" id="mob2">
+    <br>
+    State :
+    <input type="text" id="state2">
+    <br>
+    Country :
+    <input type="text" id="country2">
+    <br>
+    College :
+    <input type="text" id="college2">
+    <br>
+    Semester :
+    <input type="text" id="semester2">
+    <br>
+    Branch :
+    <input type="text" id="branch2">
+    <br>
+    Address :
+    <input type="text" id="address2">
+    <br>
+    Company :
+    <input type="text" id="company2">
+    <br>
+    Designation :
+    <input type="text" id="designation2">
+    <br>
+    Salary :
+    <input type="text" id="salary2">
+    <br>
+    Joining :
+    <input type="text" id="joining2">
+    <br>
+
+    
+</body>
+
+</html>

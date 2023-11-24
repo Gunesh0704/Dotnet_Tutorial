@@ -1,0 +1,21 @@
+.box1{
+    border : 2px solid black; 
+    height : 100px; 
+    width : 100px
+}
+.box2{
+    border : 2px solid black; 
+    height : 100px; 
+    width : 100px; 
+    left: 110px; 
+    position: Absolute; 
+    top:110px
+}
+.box3{
+    border : 2px solid black; 
+    height : 100px; 
+    width : 100px; 
+    left: 212px; 
+    position: Absolute; 
+    top:212px
+}

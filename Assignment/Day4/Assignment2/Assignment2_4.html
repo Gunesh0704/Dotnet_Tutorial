@@ -1,0 +1,91 @@
+<html>
+<head>
+<script language = "JavaScript">
+var name, college, subject, branch, percent, grd;
+
+function input()
+{
+    name = document.getElementById("name").value; 
+    college = document.getElementById("college").value;
+    subject = document.getElementById("subject").value;
+    branch = document.getElementById("branch").value;
+    percent = parseInt(document.getElementById("percent").value);
+
+display();
+}
+
+function grade(per)
+{
+per = percent;
+
+if(per> 60)
+{
+grd ="A grade";
+}
+else if(per> 50 && per< 60)
+{
+    grd ="B grade";
+}
+else
+{
+    grd ="Fail";
+}
+
+}
+
+function display()
+{
+    
+grade();
+    document.getElementById("name1").value = name;
+    document.getElementById("college2").value = college;
+    document.getElementById("subject2").value = subject;
+    document.getElementById("branch2").value = branch;
+    document.getElementById("percent2").value = percent;
+    document.getElementById("grd2").value = grd;
+}
+
+</script>
+</head>
+<body> 
+    Enter your Name :
+    <input type="text" id="name">
+    <br>
+    Enter your College:
+    <input type="text" id="college">
+    <br>
+    Enter Subject :
+    <input type="text" id="subject">
+    <br>
+    Enter Branch :
+    <input type="text" id="branch">
+    <br>
+    Enter Percentage : 
+    <input type="text" id="percent">
+    <br>
+<input type ="button" value="Submit" onclick="input()">
+
+<br><br>
+Name : 
+<input type="text" id="name1">
+    <br>
+    College : 
+    <input type="text" id="college2">
+    <br>
+    Subject :
+    <input type="text" id="subject2">
+    <br>
+    Branch : 
+    <input type="text" id="branch2">
+    <br>
+    Percentage : 
+    <input type="text" id="percent2">
+    <br>
+    Grade : 
+    <input type="text" id="grd2">
+    <br>
+
+
+
+</body>
+</html>

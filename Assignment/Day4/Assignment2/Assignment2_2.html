@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <script lang="JavaScript">
+
+        function input() {
+            var name, city, college, branch, percent, grade;
+            name = document.getElementById("name").value;
+            city = document.getElementById("city").value;
+            college = document.getElementById("college").value;
+            branch = document.getElementById("branch").value;
+            percent = document.getElementById("percent").value;
+
+            if (percent > 60) {
+                grade="A grade";
+            }
+            else if (percent > 50 && percent < 60) {
+                grade="B grade";
+            }
+            else if (percent > 40 && percent < 50) {
+                grade="C grade";
+            }
+            else {
+                grade="Fail";
+            }
+
+            document.getElementById("name1").value = name;
+            document.getElementById("city1").value = city;
+            document.getElementById("college1").value = college;
+            document.getElementById("branch1").value = branch;
+            document.getElementById("percent1").value = percent;
+            document.getElementById("grade").value = grade;
+        }
+    </script>
+</head>
+
+<body>
+    Enter your Name :
+    <input type="text" id="name">
+    <br>
+    Enter your City :
+    <input type="text" id="city">
+    <br>
+    Enter your College :
+    <input type="text" id="college">
+    <br>
+    Enter your Branch :
+    <input type="text" id="branch">
+    <br>
+    Enter your Percentage :
+    <input type="text" id="percent">
+
+    <br>
+    <input type="button" value="Display" onclick="input()">
+
+    <br><br>
+    Name :
+    <input type="text" id="name1">
+    <br>
+    City :
+    <input type="text" id="city1">
+    <br>
+    College :
+    <input type="text" id="college1">
+    <br>
+    Branch :
+    <input type="text" id="branch1">
+    <br>
+    Percentage :
+    <input type="text" id="percent1">
+    <br>
+    Grade: 
+    <input type="text" id="grade">
+
+</body>
+
+</html>

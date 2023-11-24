@@ -1,0 +1,106 @@
+<html>
+<head>
+<script language ="JavaScript">
+function length()
+{
+var name = document.getElementById("name1").value;
+document.getElementById("data").value = name.length;
+}
+
+function replace()
+{
+var s = document.getElementById("mess").value;
+var s1 = document.getElementById("repl").value;
+var s2 = document.getElementById("replw").value;
+document.getElementById("data").value = s.replace(s1,s2);
+}
+
+function replaceAll()
+{
+var s = document.getElementById("mess").value;
+var s1 = document.getElementById("repl").value;
+var s2 = document.getElementById("replw").value;
+document.getElementById("data").value = s.replaceAll(s1,s2);
+}
+
+function concat()
+{
+var s1 = document.getElementById("name2").value;
+var s2 = document.getElementById("sur").value;
+document.getElementById("data").value = s1.concat(" ",s2);
+}
+
+function Start()
+{
+var s1 = document.getElementById("dgt").value;
+var s2 = document.getElementById("symb").value;
+var s3 = document.getElementById("psn").value;
+document.getElementById("data").value = s1.padStart(s3,s2); 
+}
+
+function End()
+{
+var s1 = document.getElementById("dgt").value;
+var s2 = document.getElementById("symb").value;
+var s3 = document.getElementById("psn").value;
+document.getElementById("data").value = s1.padEnd(s3,s2);
+}
+
+</script>
+</head>
+<body>
+
+Enter your Name :  
+<input type ="text" id ="name1" >
+<br>
+<input type="button" value="Length" onclick ="length()">
+<br>
+<hr>
+
+Enter your message :  
+<input type ="text" id ="mess" >
+<br>
+Enter your Replace Word :
+<input type ="text" id ="repl" >
+<br>
+Replace With :
+<input type ="text" id ="replw" >
+<br>
+<input type="button" value="Replace" onclick ="replace()">
+<br>
+<input type="button" value="ReplaceAll" onclick ="replaceAll()">
+<br>
+<hr>
+
+Enter your name : 
+<input type ="text" id ="name2" >
+<br>
+Enter your Surname : 
+<input type ="text" id ="sur" >
+<br>
+<input type="button" value="Concat" onclick ="concat()">
+<hr>
+Enter Your Digit :
+<input type ="text" id ="dgt" >
+<br>
+Enter your Symbol :
+<input type ="text" id ="symb" >
+<br>
+Number of Position : 
+<input type ="text" id ="psn" >
+<br>
+<input type="button" value="padStart" onclick ="Start()">
+<br>
+<input type="button" value="padEnd" onclick ="End()">
+<hr>
+<br>
+
+<center>
+<font style = "color :red">Your Data is : </font>
+<br>
+<input type ="text" id ="data" >
+</center>
+<hr>
+
+</body>
+</html>

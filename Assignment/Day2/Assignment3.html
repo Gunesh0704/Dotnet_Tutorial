@@ -1,0 +1,42 @@
+<html>
+<head>
+<script language="JavaScript">
+var name, organization, designation, salary, hra, da, city;
+
+name = prompt("Enter the Name : ");
+organization = prompt("Enter the Organization : ");
+designation = prompt("Enter the Designation : "); 
+salary = parseInt(prompt("Enter the Salary : "));
+hra = parseInt(prompt("Enter the HRA : "));
+da = parseInt(prompt("Enter the DA : "));
+city = prompt("Enter the City : ");
+
+total_salary = salary+hra+da;
+
+document.write("Name : "+ name +"<br>");
+document.write("Organization : "+ organization +"<br>");
+document.write("Designation : "+ designation +"<br>");
+document.write("Salary : "+ salary +"<br>");
+document.write("HRA : "+ hra+"<br>");
+document.write("DA : "+ da +"<br>");
+document.write("City : "+ city +"<br>");
+document.write("Total Salary : "+ total_salary +"<br>");
+
+if(total_salary >= 5000)
+{
+amm = (5*salary)/100;
+document.write("5% of salary ammount : "+ amm);
+}
+else if(total_salary >= 2000 && total_salary < 5000)
+{
+amm = (2*salary)/100;
+document.write("2% of salary ammount : "+amm);
+}
+else
+{
+document.write("Wait for Next Approval");
+}
+
+</script>
+</head>
+</html>

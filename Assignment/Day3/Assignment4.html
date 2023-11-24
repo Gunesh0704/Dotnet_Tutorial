@@ -1,0 +1,53 @@
+<html>
+<head>
+<script language = "JavaScript">
+var name, college, subject, branch, percent;
+
+function input(n, clg, sub, bnc, per)
+{
+name = n;
+college = clg;
+subject = sub;
+branch = bnc;
+percent = per;
+
+display();
+}
+
+function grade(per)
+{
+per = percent;
+
+if(per> 60)
+{
+document.write("Grade :  A grade");
+}
+else if(per> 50 && per< 60)
+{
+document.write("Grade :  B grade");
+}
+else
+{
+document.write("Grade :  Failed");
+}
+
+}
+
+function display()
+{
+document.write("Name :  "+name+"<br>");
+document.write("College :  "+college+"<br>");
+document.write("Subject :  "+subject+"<br>");
+document.write("Branch :  "+branch+"<br>");
+document.write("Percentage :  "+percent+"<br>");
+grade();
+}
+
+</script>
+</head>
+<body>
+
+<input type ="button" value="Submit" onclick="input('Gunesh','ACET','Java','CSE',76)">
+
+</body>
+</html>

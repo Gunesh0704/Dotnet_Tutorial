@@ -1,0 +1,46 @@
+<html>
+<head>
+<script language ="JavaScript">
+
+function basicinfo()
+{
+
+document.getElementById("p1").innerHTML="Gunesh";
+document.getElementById("p2").innerHTML="Nagpur";
+document.getElementById("p3").innerHTML="gunesh@gmail.com";
+document.getElementById("p4").innerHTML="123456789";
+document.getElementById("p5").innerHTML="Maharashtra";
+document.getElementById("p6").innerHTML="India";
+qualification();
+}
+
+function qualification()
+{
+document.getElementById("p7").innerHTML= "ACET";
+document.getElementById("p8").innerHTML= "6th Semester";
+document.getElementById("p9").innerHTML= "CSE";
+document.getElementById("p10").innerHTML= "Sadar, Nagpur";
+}
+
+function display(){
+basicinfo();
+qualification();
+}
+
+
+</script>
+</head>
+<body>
+<p id ="p1"></p>
+<p id ="p2"></p>
+<p id ="p3"></p>
+<p id ="p4"></p>
+<p id ="p5"></p>
+<p id ="p6"></p>
+<p id ="p7"></p>
+<p id ="p8"></p>
+<p id ="p9"></p>
+<p id ="p10"></p>
+<input type ="button" value="submit" onclick="display()">
+</body>
+</html>
